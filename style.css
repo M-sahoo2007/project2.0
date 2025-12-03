@@ -1,0 +1,564 @@
+/* Global */
+body {
+  background-color: #000;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background: transparent !important;
+}
+
+.navbar .nav-link {
+  color: #f1f1f1 !important;
+  font-size: 16px;
+}
+
+.navbar-brand {
+  font-size: 30px;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 100vh;
+  background: url("assets/images/hero-bg.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.down-arrow {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* second layer */
+
+/* Mission Section */
+.mission-section {
+  background: #fff;
+}
+
+.mission-section h2 {
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.mission-section p {
+  color: #555;
+  font-size: 15px;
+}
+
+.team-photo {
+  width: 80%;
+  border-radius: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.bg-shape {
+  width: 90%;
+  position: absolute;
+  top: -20px;
+  left: 5%;
+  z-index: 1;
+  opacity: 0.45;
+}
+
+/* 3rdline */
+
+/* Services Section */
+.services-section {
+  background: #fff;
+}
+
+.service-icon {
+  width: 60px;
+  height: auto;
+}
+
+.service-text {
+  font-size: 14px;
+  color: #555;
+  margin: 10px auto 18px;
+  width: 85%;
+}
+
+.learn-more {
+  text-decoration: none;
+  font-size: 12px;
+  color: #000;
+  letter-spacing: 1px;
+}
+.learn-more:hover {
+  color: #555;
+}
+
+/* CTA Section */
+.cta-section {
+  background: #222;
+}
+
+.cta-img-left {
+  width: 60%;
+  position: relative;
+  left: -40px;
+  top: 20px;
+}
+
+.cta-img-right {
+  width: 45%;
+  position: absolute;
+  left: 40%;
+  top: 140px;
+}
+
+.cta-section h2 {
+  font-size: 42px;
+  line-height: 1.3;
+}
+
+.cta-section p {
+  color: #bbb;
+  font-size: 16px;
+  width: 80%;
+}
+
+
+/* Our Works Section */
+.works-section {
+  background: #fff;
+}
+
+.works-filter a {
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #666;
+}
+
+/* 4th line  */
+.works-filter a.active,
+.works-filter a:hover {
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+
+.work-img {
+  width: 100%;
+  border-radius: 0;
+  transition: 0.3s ease;
+}
+
+.work-img:hover {
+  transform: scale(1.03);
+}
+
+
+/* Creative CTA Section */
+.creative-cta {
+  background: #eaeaea;
+}
+
+.creative-cta h3 {
+  font-size: 32px;
+}
+
+.btn-dark {
+  background: #222;
+  border: none;
+}
+
+/* Process Section */
+.process-section {
+  background: #fff;
+}
+
+.process-icon {
+  width: 70px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.process-section h3 {
+  font-size: 28px;
+}
+
+
+/* Why Choose Us Section */
+.choose-section {
+  background: #fff;
+}
+
+.choose-img {
+  width: 55%;
+  position: absolute;
+  border-radius: 0;
+}
+
+/* Image positions */
+.img1 {
+  top: 0;
+  left: 0;
+}
+
+.img2 {
+  width: 65%;
+  top: 60px;
+  left: 60px;
+  z-index: 2;
+}
+
+.img3 {
+  width: 40%;
+  bottom: -50px;
+  left: 200px;
+  z-index: 3;
+}
+
+@media (max-width: 992px) {
+  .choose-img {
+    position: relative;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Features Section */
+.features-section {
+  background: #fff;
+}
+
+.feature-icon {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.feature-bg {
+  width: 80%;
+  position: relative;
+  left: 10%;
+}
+
+.feature-main {
+  width: 55%;
+  position: absolute;
+  top: 25%;
+  left: 22%;
+  z-index: 5;
+}
+
+@media (max-width: 992px) {
+  .feature-bg,
+  .feature-main {
+    width: 90%;
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-bottom: 20px;
+  }
+}
+
+/* Testimonial Section */
+#testimonial-section {
+  position: relative;
+}
+
+.testimonial-bg {
+  background: url("assets/images/testimonial-bg.jpg") center/cover no-repeat;
+  width: 100%;
+  height: 70vh;
+  filter: brightness(0.35);
+}
+
+.carousel-caption {
+  bottom: 40%;
+}
+
+.carousel-caption h2 {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.testimonial-text {
+  width: 70%;
+  margin: 10px auto 15px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.author {
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+/* Arrows */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 50px;
+  filter: invert(1);
+}
+
+/* Indicators */
+.carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+  background: url("assets/images/newsletter-bg.jpg") center/cover no-repeat;
+  height: 60vh;
+  position: relative;
+  filter: brightness(0.85);
+}
+
+.newsletter-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.newsletter-section .container {
+  position: relative;
+  z-index: 5;
+}
+
+.newsletter-icon {
+  width: 70px;
+}
+
+.email-input {
+  width: 60%;
+  max-width: 550px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  padding-left: 20px;
+}
+
+.subscribe-btn {
+  border-radius: 0 5px 5px 0;
+}
+
+.tnc-link {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.tnc-link:hover {
+  color: #ddd;
+}
+
+/* Blog Section */
+.blog-section {
+  background: #fff;
+}
+
+.blog-img {
+  width: 100%;
+  border-radius: 0;
+}
+
+.blog-link {
+  text-decoration: none;
+  color: #888;
+}
+
+.blog-link:hover {
+  color: #000;
+}
+
+.learn-more {
+  text-decoration: none;
+  color: #000;
+}
+
+.learn-more:hover {
+  opacity: 0.7;
+}
+
+
+/* Newsletter Section */
+.newsletter-section {
+  background: url("assets/images/newsletter-bg.jpg") center/cover no-repeat;
+  height: 60vh;
+  position: relative;
+  filter: brightness(0.85);
+}
+
+.newsletter-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.newsletter-section .container {
+  position: relative;
+  z-index: 5;
+}
+
+.newsletter-icon {
+  width: 70px;
+}
+
+.email-input {
+  width: 60%;
+  max-width: 550px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  padding-left: 20px;
+}
+
+.subscribe-btn {
+  border-radius: 0 5px 5px 0;
+}
+
+.tnc-link {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.tnc-link:hover {
+  color: #ddd;
+}
+
+/* Contact Section */
+.contact-section {
+  background: #fff;
+}
+
+.contact-icon {
+  width: 45px;
+  margin-bottom: 10px;
+}
+
+.contact-link {
+  color: #000;
+  text-decoration: underline;
+}
+
+.contact-link:hover {
+  opacity: 0.7;
+}
+
+.contact-form .form-control {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Map Section */
+.map-section {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.map-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.55);
+  pointer-events: none; /* Click passes to map */
+}
+
+.map-center-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.map-pin {
+  width: 55px;
+  filter: drop-shadow(0px 3px 4px rgba(0,0,0,0.25));
+}
+
+/* Final CTA Section */
+.final-cta-section {
+  background: #1a1a1a;
+  padding: 100px 0;
+}
+
+.final-cta-section h2 {
+  font-size: 42px;
+}
+
+.final-cta-section p {
+  width: 70%;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.final-cta-section button:hover {
+  background: #fff;
+  opacity: 0.85;
+}
+
+/* Footer Section */
+.footer-section {
+  background: #f6f6f6;
+}
+
+.footer-icon {
+  width: 40px;
+  height: 40px;
+  background: #333;
+  padding: 10px;
+  border-radius: 50%;
+  margin: 0 8px;
+  filter: invert(1);
+  transition: 0.3s;
+}
+
+.footer-icon:hover {
+  opacity: 0.7;
+}
+
+.back-to-top {
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.15));
+  z-index: 10;
+}
+
+.back-to-top:hover {
+  opacity: 0.85;
+}
